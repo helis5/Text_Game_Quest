@@ -1,0 +1,15 @@
+/home/helis/c#/Text Game Quest/Text Game Quest/obj/Debug/net9.0/Text Game Quest.GeneratedMSBuildEditorConfig.editorconfig
+/home/helis/c#/Text Game Quest/Text Game Quest/obj/Debug/net9.0/Text Game Quest.AssemblyInfoInputs.cache
+/home/helis/c#/Text Game Quest/Text Game Quest/obj/Debug/net9.0/Text Game Quest.AssemblyInfo.cs
+/home/helis/c#/Text Game Quest/Text Game Quest/obj/Debug/net9.0/Text Game Quest.csproj.CoreCompileInputs.cache
+/home/helis/c#/Text Game Quest/Text Game Quest/obj/Debug/net9.0/Text Game Quest.sourcelink.json
+/home/helis/c#/Text Game Quest/Text Game Quest/bin/Debug/net9.0/Text Game Quest
+/home/helis/c#/Text Game Quest/Text Game Quest/bin/Debug/net9.0/Text Game Quest.deps.json
+/home/helis/c#/Text Game Quest/Text Game Quest/bin/Debug/net9.0/Text Game Quest.runtimeconfig.json
+/home/helis/c#/Text Game Quest/Text Game Quest/bin/Debug/net9.0/Text Game Quest.dll
+/home/helis/c#/Text Game Quest/Text Game Quest/bin/Debug/net9.0/Text Game Quest.pdb
+/home/helis/c#/Text Game Quest/Text Game Quest/obj/Debug/net9.0/Text Game Quest.dll
+/home/helis/c#/Text Game Quest/Text Game Quest/obj/Debug/net9.0/refint/Text Game Quest.dll
+/home/helis/c#/Text Game Quest/Text Game Quest/obj/Debug/net9.0/Text Game Quest.pdb
+/home/helis/c#/Text Game Quest/Text Game Quest/obj/Debug/net9.0/Text Game Quest.genruntimeconfig.cache
+/home/helis/c#/Text Game Quest/Text Game Quest/obj/Debug/net9.0/ref/Text Game Quest.dll
