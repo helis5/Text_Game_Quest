@@ -43,6 +43,7 @@ namespace Actions
                 State.Energy -= 15;
             }
             Observer.Listen.Do();
+            
         }
 
         public static void Look_for_geometric_anomalies()
@@ -58,6 +59,7 @@ namespace Actions
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Вам пока рано сюда, вы недостаточно осознали сущность происходящего. Вы ничего не нашли, но привлеки внимание. Ск - 5");
                 State.Stealth -= 5;
+                State.Display();
                 Console.ForegroundColor = ConsoleColor.White;
                 Observer.Listen.Do();
                 AnalyzeTheEnvironment.Print();

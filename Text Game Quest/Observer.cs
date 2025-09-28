@@ -44,6 +44,7 @@ namespace Observer
                     {
                         MidChange.Print("Вам удалось завернуть за угол и скрыться, но вы потеряли почти всю скрытность. Теперь наблюдатели знают вас в лицо. Вам осталось недолго.");
                         State.Stealth += 5;
+                        State.Display();
                         Observer.Listen.Do();
                     }
                     else GameOver.Print();
@@ -59,6 +60,7 @@ namespace Observer
                     {
                         MidChange.Print("Хранители принимают вас за обычный глитч, Ск восстанавливается до 25");
                         State.Stealth += 25;
+                        State.Display();
                         Observer.Listen.Do();
                     }
                     else GameOver.Print();

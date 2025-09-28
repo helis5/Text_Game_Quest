@@ -104,7 +104,7 @@ namespace History
                     Actions.AnalyzeTheEnvironment.Print();
                     break;
                 case 1:
-
+                    Actions.InteractWithTheSystem.Print();
                     break;
             }
         }
