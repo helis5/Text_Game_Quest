@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Text Game Quest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d37e88265d155a0cb800d7ca90cd1717d89e5ac6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5038aca4749d6ce708a3e5dad37a9b1b9fbf2450")]
 [assembly: System.Reflection.AssemblyProductAttribute("Text Game Quest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Text Game Quest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,10 +1,12 @@
-public class Wactions
+public class Vactions
 {
     public static int GetNumberChoice(string[] options, string prompt = "Выберите действие:")
     {
         while (true)
         {
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.WriteLine(prompt);
+            Console.ForegroundColor = ConsoleColor.White;
             for (int i = 0; i < options.Length; i++)
             {
                 Console.WriteLine($"{i + 1}. {options[i]}");
@@ -23,3 +25,5 @@ public class Wactions
         }
     }
 }
+
+

@@ -6,7 +6,7 @@ class Program {
     {
         ConsoleColor originalColor = Console.ForegroundColor;
 
-        History.Background();
-        History.Day1();
+        History.Background.Print();
+        History.Day1.Print();
     }  
 }
