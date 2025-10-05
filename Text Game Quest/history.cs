@@ -6,7 +6,8 @@ namespace History
 
     public static class Background
     {
-        public static void Print() {
+        public static void Print()
+        {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("== ПОБЕГ ИЗ СИМУЛЯЦИИ ==");
             Console.ForegroundColor = ConsoleColor.White;
@@ -40,7 +41,7 @@ namespace History
 
 
             int choice = Vactions.GetNumberChoice(actions);
-            
+
             Console.WriteLine($"Вы выбрали: {actions[choice]}");
 
             switch (choice)
@@ -59,8 +60,6 @@ namespace History
                 MidChange.Print("Вы подавляете странное ощущение. День проходит предсказуемо. Коллеги улыбаются одинаковыми улыбками. Система вас не замечает");
                 State.Stealth += 10;
                 State.Energy += 5;
-                State.Day += 1;
-                History.Day2.Print();
             }
             static void HandleInterest()
             {
@@ -68,15 +67,18 @@ namespace History
                 State.Awareness += 10;
                 State.Stealth -= 5;
                 State.Energy -= 10;
-                State.Day += 1;
-                History.Day2.Print();
+
             }
+
+            State.Day += 1;
+            History.Day2.Print();
         }
 
     }
     public static class Day2
     {
-        public static void Print() {
+        public static void Print()
+        {
             NightChanges.change();
 
             Console.ForegroundColor = ConsoleColor.Yellow;
@@ -106,7 +108,50 @@ namespace History
                 case 1:
                     Actions.InteractWithTheSystem.Print();
                     break;
+                case 2:
+                    Actions.ActiveMasking.Print();
+                    break;
             }
+            State.Day += 1;
+            History.Day3.Print();
+        }
+
+    }
+    
+    public static class Day3
+    {
+        public static void Print()
+        {
+            NightChanges.change();
+
+            Console.WriteLine("Наступил следующий день. После вчерашних событий у вас всё ещё болит голова.");
+            State.Display();
+
+            string[] actions = {
+                "Анализировать окружение",
+                "Взаимодействовать с системой",
+                "Активная маскировка",
+                "Отдых и медитация",
+            };
+
+
+            int choice = Vactions.GetNumberChoice(actions);
+            Console.WriteLine($"Вы выбрали: {actions[choice]}");
+
+
+            switch (choice)
+            {
+                case 0:
+                    Actions.AnalyzeTheEnvironment.Print();
+                    break;
+                case 1:
+                    Actions.InteractWithTheSystem.Print();
+                    break;
+                case 2:
+                    Actions.ActiveMasking.Print();
+                    break;
+            }
+            
         }
         
     }

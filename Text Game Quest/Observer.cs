@@ -45,7 +45,12 @@ namespace Observer
                         State.Display();
                         Observer.Listen.Do();
                     }
-                    else GameOver.Print();
+                    else
+                    {
+                        BadChange.Print("Вы потеряли бдительность и Смотрители смогли вас схватить. Вы пытаетесь вырваться, но процесс зачистки кода уже запущен. Вы стёрты.");
+                        GameOver.Print();
+                    }
+                    
                 }
 
                 static void Imitation()
