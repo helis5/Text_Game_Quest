@@ -1,3 +1,5 @@
+using History;
+
 namespace Actions
 {
     public static class LookingForTracesOfThePast
@@ -31,7 +33,7 @@ namespace Actions
                 State.Stealth -= 5;
 
                 Observer.Listen.Do();
-                LookingForTracesOfThePast.Print();
+                Day2.Print();
             }
 
             Observer.Listen.Do();

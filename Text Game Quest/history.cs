@@ -111,6 +111,9 @@ namespace History
                 case 2:
                     Actions.ActiveMasking.Print();
                     break;
+                case 3:
+                    Actions.RestAndMeditation.Print();
+                    break;
             }
             State.Day += 1;
             History.Day3.Print();
@@ -124,7 +127,7 @@ namespace History
         {
             NightChanges.change();
 
-            Console.WriteLine("Наступил следующий день. После вчерашних событий у вас всё ещё болит голова.");
+            Console.WriteLine("Наступил следующий день. После вчерашних событий у вас всё ещё болит голова. Из-за ваших действий с системой что-то случилось и вы оказались заложником дня сурка. При росте осознания вы сможете выбраться из него");
             State.Display();
 
             string[] actions = {
@@ -154,9 +157,12 @@ namespace History
                 case 3:
                     Actions.LookingForTracesOfThePast.Print();
                     break;
+                case 4:
+                    Actions.RestAndMeditation.Print();
+                    break;
             }
+            State.Day += 1;
             History.Day3.Print();
-            
         }
         
     }
