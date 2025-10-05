@@ -23,7 +23,7 @@ namespace Actions
                         LookingForTracesOfThePast.Memories();
                         break;
                     case 1:
-                        ActiveMasking.DigitalTwin();
+                        LookingForTracesOfThePast.RealName();
                         break;
                 }
             }
