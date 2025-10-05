@@ -32,6 +32,9 @@ namespace Actions
 
             State.Stealth += 20;
             State.Awareness -= 5;
+
+            State.Display();
+            Observer.Listen.Do();
         }
 
         public static void DigitalTwin()

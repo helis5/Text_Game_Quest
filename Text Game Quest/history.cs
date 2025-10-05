@@ -131,6 +131,7 @@ namespace History
                 "Анализировать окружение",
                 "Взаимодействовать с системой",
                 "Активная маскировка",
+                "Искать следы прошлого (доступно при О >50)",
                 "Отдых и медитация",
             };
 
@@ -150,7 +151,11 @@ namespace History
                 case 2:
                     Actions.ActiveMasking.Print();
                     break;
+                case 3:
+                    Actions.LookingForTracesOfThePast.Print();
+                    break;
             }
+            History.Day3.Print();
             
         }
         

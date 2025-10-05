@@ -50,7 +50,7 @@ namespace Observer
                         BadChange.Print("Вы потеряли бдительность и Смотрители смогли вас схватить. Вы пытаетесь вырваться, но процесс зачистки кода уже запущен. Вы стёрты.");
                         GameOver.Print();
                     }
-                    
+
                 }
 
                 static void Imitation()
@@ -58,7 +58,7 @@ namespace Observer
                     var rand = new Random();
                     Random random = new Random();
                     bool randomBool = random.Next(2) == 1;
-                    
+
                     if (randomBool)
                     {
                         MidChange.Print("Хранители принимают вас за обычный глитч, Ск восстанавливается до 25");
@@ -68,6 +68,16 @@ namespace Observer
                     }
                     else GameOver.Print();
                 }
+            }
+
+            if (State.Awareness >= 80)
+            {
+                Console.WriteLine("");
+                GoodChange.Print("Специальное событие - Прорыв");
+                GoodChange.Print("Мир вокруг начинает мерцать. Вы видите код, составляющий реальность. Перед вами возникает «Разрыв» — искажение в пространстве, ведущее к свободе. Но Хранители бросают на вас все силы!");
+                Console.WriteLine("");
+                GoodChange.Print("Вы делаете шаг в Разрыв. Боль сменяется ощущением холодной жидкости и звуком отключаемых датчиков. Вы снова в своем теле. Победа");
+                GoodChange.Print("===============================");
             }
         }
     }
